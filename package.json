@@ -1,5 +1,5 @@
 {
-  "name": "angular-tree-component",
+  "name": "@thescene/angular-tree-component",
   "version": "3.7.3",
   "description": "A simple yet powerful tree component for Angular2",
   "author": "Adam Klein <adam@500tech.com>",
@@ -48,7 +48,6 @@
     "test": "protractor protractor.conf.js",
     "pretest": "npm run e2e:tsc",
     "test:setup": "concurrently --kill-others \"npm run selenium\" \"npm run example:cli\"",
-    "prepublishOnly": "cd example/cli && npm install && cd ../../ && npm run build && npm run example:cli:build",
     "e2e:tsc": "cd e2e && tsc"
   },
   "files": [
@@ -95,7 +94,7 @@
     "rollup-plugin-node-resolve": "2.0.0",
     "rollup-plugin-uglify": "1.0.1",
     "rxjs": "^5.1.0",
-    "tslint": "4.4.2",
+    "tslint": "^5.4.3",
     "typedoc": "^0.3.12",
     "typescript": "^2.1.4",
     "zone.js": "^0.8.4"

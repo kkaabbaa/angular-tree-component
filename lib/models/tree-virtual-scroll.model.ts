@@ -83,6 +83,10 @@ export class TreeVirtualScroll {
   }
 
   @action setViewport(viewport) {
+    if (typeof viewport.getBoundingClientRect === 'undefined') {
+      return;
+    }
+
     Object.assign(this, {
       viewport,
       x: viewport.scrollLeft,
